@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Login Page -->
+    <div id="login-page" class="page">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+            <p>Don't have an account? <a href="#" onclick="showRegisterPage()">Register</a></p>
+        </form>
+    </div>
+
+    <!-- Register Page -->
+    <div id="register-page" class="page" style="display: none;">
+        <h2>Register</h2>
+        <form id="register-form">
+            <input type="text" id="new-username" placeholder="Username" required>
+            <input type="password" id="new-password" placeholder="Password" required>
+            <button type="submit">Register</button>
+            <p>Already have an account? <a href="#" onclick="showLoginPage()">Login</a></p>
+        </form>
+    </div>
+
+
+    <!-- Main Store Page -->
+    <div id="store-page" class="page" style="display: none;">
+        <header>
+            <h1>Popular Sneakers 2023-2034</h1>
+            <div id="cart" class="cart">
+                <span>Cart: </span>
+                <span id="cart-count">0</span> items | Total: $<span id="cart-total">0.00</span>
+            </div>
+        </header>
+        
+        <main>
+            <section id="sneakers">
+                <!-- Sneaker Items -->
+                <div class="sneaker-item">
+                    <div class="image-slider">
+                        <img src="images/AIR+MAX+DN - Copy.png" alt="Nike Air Max Angle 1" class="active">
+                        <img src="images/AIR+MAX+DN (1) - Copy.png" alt="Nike Air Max Angle 2">
+                        <img src="images/AIR+MAX+DN (2) - Copy.png" alt="Nike Air Max Angle 3">
+                    </div>
+                    <div class="thumbnails">
+                        <img src="images/AIR+MAX+DN.png" alt="Angle 1" onclick="changeImage(this.src, this.alt)">
+                        <img src="images/AIR+MAX+DN (1).png" alt="Angle 2" onclick="changeImage(this.src, this.alt)">
+                        <img src="images/AIR+MAX+DN (2).png" alt="Angle 3" onclick="changeImage(this.src, this.alt)">
+                    </div>
+                    <h3>Nike Air Max 2023</h3>
+                    <p>$150.00</p>
+                    <button onclick="addToCart('Nike Air Max 2023', 150)">Add to Cart</button>
+
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+                <!-- </div>
+            <div class="sneaker-item">
+                <img src="https://via.placeholder.com/150" alt="Sneaker 2">
+                <h3>Adidas Ultraboost 2024</h3>
+                <p>$180.00</p>
+                <button onclick="addToCart('Adidas Ultraboost 2024', 180)">Add to Cart</button>
+            </div>
+            <div class="sneaker-item">
+                <img src="https://via.placeholder.com/150" alt="Sneaker 3">
+                <h3>Puma RS-X Retro 2025</h3>
+                <p>$120.00</p>
+                <button onclick="addToCart('Puma RS-X Retro 2025', 120)">Add to Cart</button>
+            </div>
+            <div class="sneaker-item">
+                <img src="https://via.placeholder.com/150" alt="Sneaker 4">
+                <h3>New Balance Fresh Foam 2026</h3>
+                <p>$170.00</p>
+                <button onclick="addToCart('New Balance Fresh Foam 2026', 170)">Add to Cart</button>
+            </div> -->
+            <!-- <div class="sneaker-item">
+                <img src="https://via.placeholder.com/150" alt="Sneaker 5">
+                <h3>Converse Chuck Taylor All Star 2027</h3>
+                <p>$90.00</p>
+                <button onclick="addToCart('Converse Chuck Taylor All Star 2027', 90)">Add to Cart</button>
+            </div>
+            <div class="sneaker-item">
+                <img src="https://via.placeholder.com/150" alt="Sneaker 6">
+                <h3>Vans Old Skool 2028</h3>
+                <p>$80.00</p>
+                <button onclick="addToCart('Vans Old Skool 2028', 80)">Add to Cart</button>
+            </div> -->
+        <!-- </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> -->
